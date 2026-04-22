@@ -7,16 +7,16 @@ import localePt from '@angular/common/locales/pt';
 
 registerLocaleData(localePt);
 
-const savedLang = localStorage.getItem('lang');
-const browserLang = navigator.language.startsWith('pt') ? 'pt' : 'en-US';
-const lang = savedLang || browserLang;
+const supportedLangs = ['pt', 'en-us'];
+const path = window.location.pathname.toLowerCase();
 
-const path = window.location.pathname;
+const isLocalized = supportedLangs.some((lang) => path.startsWith(`/${lang}`));
 
-if (path === '/' || path === '') {
+if (!isLocalized) {
+  const browserLang = navigator.language.toLowerCase();
+  const lang = browserLang.startsWith('pt') ? 'pt' : 'en-US';
+
   window.location.replace(`/${lang}`);
 } else {
-  bootstrapApplication(AppComponent, appConfig).catch((err) =>
-    console.error(err),
-  );
+  bootstrapApplication(AppComponent, appConfig).catch(console.error);
 }
