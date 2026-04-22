@@ -1,0 +1,53 @@
+<div class="grid grid-cols-2 border-b border-[rgba(232,228,220,0.08)]">
+  <div class="px-8 py-10 border-r border-[rgba(232,228,220,0.08)]">
+    <div
+      class="font-serif italic text-[32px] text-[#e8e4dc] leading-[1.2] mb-6"
+      i18n="@@contact.title"
+    >
+      Vamos<br />trabalhar<br />juntos?
+    </div>
+    <div class="flex flex-col gap-2">
+      <a
+        href="mailto:sergiohidekiono@gmail.com"
+        target="_blank"
+        class="flex items-center justify-between px-3.5 py-3 border border-[rgba(232,228,220,0.08)] text-[13px] font-light text-[rgba(232,228,220,0.5)] transition-colors duration-200 hover:border-[rgba(201,169,110,0.35)] hover:text-[#c9a96e]"
+      >
+        <span>{{ email }}</span>
+        <span class="text-[12px]">↗</span>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/sergio-hideki-ono-947b066a/"
+        target="_blank"
+        class="flex items-center justify-between px-3.5 py-3 border border-[rgba(232,228,220,0.08)] text-[13px] font-light text-[rgba(232,228,220,0.5)] transition-colors duration-200 hover:border-[rgba(201,169,110,0.35)] hover:text-[#c9a96e]"
+      >
+        <span>LinkedIn /in/sergio-hideki-ono-947b066a/</span>
+        <span class="text-[12px]">↗</span>
+      </a>
+      <a
+        href="https://github.com/sergiohidekiono"
+        target="_blank"
+        class="flex items-center justify-between px-3.5 py-3 border border-[rgba(232,228,220,0.08)] text-[13px] font-light text-[rgba(232,228,220,0.5)] transition-colors duration-200 hover:border-[rgba(201,169,110,0.35)] hover:text-[#c9a96e]"
+      >
+        <span>GitHub /sergiohidekiono</span>
+        <span class="text-[12px]">↗</span>
+      </a>
+    </div>
+  </div>
+  <div class="px-8 py-10 flex flex-col justify-end">
+    <p
+      class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.2)] leading-[1.7] tracking-[0.06em]"
+    >
+      Aberto a oportunidades remotas,<br />
+      híbridas e presenciais.<br />
+      Respondo em até 24h.
+    </p>
+    <button
+      type="button"
+      (click)="downloadCurriculum()"
+      class="mt-4 w-full bg-[#c9a96e] text-[#0e0e0e] px-7 py-[14px] font-mono text-[12px] tracking-[0.08em] transition-opacity duration-200 hover:opacity-85"
+    >
+      DOWNLOAD CURRÍCULO PDF
+    </button>
+  </div>
+</div>

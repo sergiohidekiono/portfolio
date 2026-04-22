@@ -1,0 +1,35 @@
+<nav
+  class="md:flex justify-between items-center px-4 py-3 border-b-1 border-[#e8e4dc1a]"
+>
+  <div class="mono text-center text-xl w-full m-4 md:w-auto">
+    <b> {{ displayText }}<span class="animate-pulse">|</span> </b>
+  </div>
+  <ul class="flex flex-wrap topnav gap-8 justify-center md:text-lg">
+    <li>
+      <a [routerLink]="[]" fragment="knowledges" i18n="@@nav.knowledges"
+        >Conhecimentos</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="[]" fragment="trajectory" i18n="@@nav.trajectory"
+        >Trajetória</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="[]" fragment="projects" i18n="@@nav.projects"
+        >Projetos</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="[]" fragment="contact" i18n="@@nav.contact">Contato</a>
+    </li>
+    <li class="flex gap-4">
+      <div>
+        <button (click)="changeLang('pt')">🇧🇷</button>
+      </div>
+      <div>
+        <button (click)="changeLang('en-US')">🇺🇸</button>
+      </div>
+    </li>
+  </ul>
+</nav>

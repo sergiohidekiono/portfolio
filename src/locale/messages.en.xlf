@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="knowledge.quality" datatype="html">
+        <source>Qualidade</source>
+        <target>Quality</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/knowledges/knowledges.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="knowledge.quality.description" datatype="html">
+        <source> Jest, Cypress, Storybook, 80%+ cobertura de testes </source>
+        <target> Jest, Cypress, Storybook, 80%+ test coverage </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/knowledges/knowledges.component.html</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source> Vamos<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;" />trabalhar<x
+            id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;" />juntos? </source>
+        <target>Let's<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;" />work<x
+            id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;" />together?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.knowledges" datatype="html">
+        <source>Conhecimentos</source>
+        <target>Knowledges</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.trajectory" datatype="html">
+        <source>Trajetória</source>
+        <target>Trajectory</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.projects" datatype="html">
+        <source>Projetos</source>
+        <target>Projects</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">20,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.contact" datatype="html">
+        <source>Contato</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">24,27</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
