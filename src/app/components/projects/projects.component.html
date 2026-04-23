@@ -1,126 +1,39 @@
 <div class="sec">
-  <app-section-title [sectionNumber]="'02'" [title]="'Projetos'" />
-  <div class="flex flex-col">
-    <div
-      class="grid grid-cols-[2rem_1fr_120px_80px] items-center gap-4 py-4 border-b border-[rgba(232,228,220,0.06)] cursor-pointer transition hover:bg-[rgba(201,169,110,0.03)] group"
-    >
+  <app-section-title [sectionNumber]="section" [title]="title" />
+  <div class="page-container">
+    @for (project of projects; track project.title) {
       <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.2)]"
+        class="grid grid-cols-[2rem_1fr_120px_80px] items-center gap-4 py-4 border-b border-[rgba(232,228,220,0.06)] cursor-pointer transition hover:bg-[rgba(201,169,110,0.03)] group"
       >
-        01
-      </div>
-      <div>
-        <div class="text-[14px] text-[#e8e4dc] mb-[2px]">
-          Dashboard financeiro
+        <div
+          class="font-mono text-[10px] md:text-base font-light font-highlight"
+        >
+          {{ project.number }}
         </div>
-        <div class="text-[11px] font-light text-[rgba(232,228,220,0.35)]">
-          Painel analítico com gráficos em tempo real e exportação de relatórios
+        <div>
+          <div class="text-[14px] md:text-lg text-[#e8e4dc]">
+            {{ project.title }}
+          </div>
+          <div class="text-[11px] md:text-base font-light font-highlight">
+            {{ project.description }}
+          </div>
         </div>
-      </div>
 
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] text-right"
-      >
-        Angular · NgRx<br />Chart.js · REST
-      </div>
-      <div
-        class="text-[14px] text-[rgba(232,228,220,0.2)] text-right transition group-hover:text-[#c9a96e]"
-      >
-        ↗
-      </div>
-    </div>
-    <div
-      class="grid grid-cols-[2rem_1fr_120px_80px] items-center gap-4 py-4 border-b border-[rgba(232,228,220,0.06)] cursor-pointer transition hover:bg-[rgba(201,169,110,0.03)] group"
-    >
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.2)]"
-      >
-        02
-      </div>
-
-      <div>
-        <div class="text-[14px] text-[#e8e4dc] mb-[2px]">
-          App de logística PWA
+        <div class="flex flex-wrap justify-end gap-1">
+          @for (tech of project.technologies; track tech) {
+            <span
+              class="font-mono text-[10px] md:text-xs px-2 py-[2px] border border-gray-500/30 rounded-sm"
+            >
+              {{ tech }}
+            </span>
+          }
         </div>
-        <div class="text-[11px] font-light text-[rgba(232,228,220,0.35)]">
-          Sistema offline-first com sync automático e rastreamento em tempo real
+        <div
+          class="text-[14px] font-highlight text-right transition group-hover:text-[#c9a96e]"
+        >
+          ↗
         </div>
       </div>
-
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] text-right"
-      >
-        PWA · RxJS<br />Firebase
-      </div>
-
-      <div
-        class="text-[14px] text-[rgba(232,228,220,0.2)] text-right transition group-hover:text-[#c9a96e]"
-      >
-        ↗
-      </div>
-    </div>
-
-    <!-- ROW -->
-    <div
-      class="grid grid-cols-[2rem_1fr_120px_80px] items-center gap-4 py-4 border-b border-[rgba(232,228,220,0.06)] cursor-pointer transition hover:bg-[rgba(201,169,110,0.03)] group"
-    >
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.2)]"
-      >
-        03
-      </div>
-
-      <div>
-        <div class="text-[14px] text-[#e8e4dc] mb-[2px]">Design System npm</div>
-        <div class="text-[11px] font-light text-[rgba(232,228,220,0.35)]">
-          Biblioteca de componentes acessíveis publicada no npm com 90%+ de
-          cobertura
-        </div>
-      </div>
-
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] text-right"
-      >
-        Angular CDK<br />Storybook · a11y
-      </div>
-
-      <div
-        class="text-[14px] text-[rgba(232,228,220,0.2)] text-right transition group-hover:text-[#c9a96e]"
-      >
-        ↗
-      </div>
-    </div>
-
-    <!-- ROW -->
-    <div
-      class="grid grid-cols-[2rem_1fr_120px_80px] items-center gap-4 py-4 border-b border-[rgba(232,228,220,0.06)] cursor-pointer transition hover:bg-[rgba(201,169,110,0.03)] group"
-    >
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.2)]"
-      >
-        04
-      </div>
-
-      <div>
-        <div class="text-[14px] text-[#e8e4dc] mb-[2px]">
-          Plataforma SaaS B2B
-        </div>
-        <div class="text-[11px] font-light text-[rgba(232,228,220,0.35)]">
-          Módulos críticos em arquitetura micro-frontend com NX e federation
-        </div>
-      </div>
-
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] text-right"
-      >
-        NX · Module<br />Federation
-      </div>
-
-      <div
-        class="text-[14px] text-[rgba(232,228,220,0.2)] text-right transition group-hover:text-[#c9a96e]"
-      >
-        ↗
-      </div>
-    </div>
+    }
   </div>
 </div>

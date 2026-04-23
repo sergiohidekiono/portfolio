@@ -2,18 +2,69 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="pt" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="knowledge.quality" datatype="html">
-        <source>Qualidade</source>
+      <trans-unit id="footer.title" datatype="html">
+        <source> Copyright © <x id="INTERPOLATION" equiv-text="{{ nowDate }}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b class=&quot;text-[rgba(201,169,110,0.57)] font-normal&quot;&gt;"/> Sergio Hideki<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Todos direitos reservados. </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/knowledges/knowledges.component.html</context>
-          <context context-type="linenumber">37,39</context>
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">8,12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="knowledge.quality.description" datatype="html">
-        <source> Jest, Cypress, Storybook, 80%+ cobertura de testes </source>
+      <trans-unit id="knowledge.title" datatype="html">
+        <source>Conhecimentos</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/knowledges/knowledges.component.html</context>
-          <context context-type="linenumber">41,44</context>
+          <context context-type="sourcefile">src/app/components/knowledges/knowledges.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.tag" datatype="html">
+        <source><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div
+          class=&quot;w-[6px] h-[6px] rounded-full bg-[#4a7c59] animate-[pulse_2.5s_ease-in-out_infinite]&quot;
+        &gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/> DISPONÍVEL PARA CONTRATAÇÃO </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.description" datatype="html">
+        <source> Desenvolvedor Frontend especializado em Angular com experiência em aplicações enterprise para clientes globais. Meu trabalho vai além do código: me preocupo com performance, escalabilidade e a qualidade da experiência que o sistema entrega. Já contribuí em projetos para o grupo CNH Industrial, sistemas de gestão de clínicas, plataformas de fitness e e-commerces. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">29,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.years" datatype="html">
+        <source> ANOS DE EXPERIÊNCIA EM ANGULAR </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.projects" datatype="html">
+        <source> PROJETOS ENTREGUES </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profile.version" datatype="html">
+        <source> VERSÃO DOMINADA </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile/profile.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="projects.title" datatype="html">
+        <source>Projetos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/projects/projects.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="trajectory.title" datatype="html">
+        <source>Trajetória</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trajectory/trajectory.component.ts</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contact.title" datatype="html">
@@ -21,6 +72,20 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact.component.html</context>
           <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.description" datatype="html">
+        <source> Aberto a oportunidades remotas,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> híbridas e presenciais.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Respondo em até 24h. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.component.html</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.downloadButton" datatype="html">
+        <source> BAIXAR CURRÍCULO PDF </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact.component.html</context>
+          <context context-type="linenumber">52,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nav.knowledges" datatype="html">

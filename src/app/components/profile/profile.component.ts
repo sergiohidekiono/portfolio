@@ -4,8 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-profile',
   imports: [],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent {
-
+  yearsOfExperience: number = 5;
+  projectDelivered: number = 15;
+  version: string = 'v4 ~ v19';
 }

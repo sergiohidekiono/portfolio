@@ -7,11 +7,4 @@ export const PROJECTS_ROUTES: Routes = [
     path: '',
     component: ProjectsComponent,
   },
-  {
-    path: ':id',
-    loadComponent: () =>
-      import('./project-detail/project-detail.component').then(
-        (c) => c.ProjectDetailComponent,
-      ),
-  },
 ];

@@ -5,6 +5,6 @@ import { Component, input } from '@angular/core';
   templateUrl: './section-title.component.html',
 })
 export class SectionTitleComponent {
-  sectionNumber = input<string>();
+  sectionNumber = input<number>();
   title = input<string>();
 }

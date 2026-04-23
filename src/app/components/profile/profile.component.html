@@ -1,10 +1,11 @@
-<div class="grid grid-cols-2 border-b border-[rgba(232,228,220,0.08)]">
+<div class="page-container grid grid-cols-1 md:grid-cols-2">
   <div
-    class="flex flex-col justify-between px-8 py-14 border-r border-[rgba(232,228,220,0.08)]"
+    class="md:pr-8 justify-between md:border-r border-[rgba(232,228,220,0.08)]"
   >
     <div>
       <div
         class="inline-flex items-center gap-1.5 font-mono text-[10px] font-light text-[#c9a96e] tracking-[0.1em] border border-[rgba(201,169,110,0.3)] px-3 py-[5px] rounded-[2px] w-fit mb-10"
+        i18n="@@profile.tag"
       >
         <div
           class="w-[6px] h-[6px] rounded-full bg-[#4a7c59] animate-[pulse_2.5s_ease-in-out_infinite]"
@@ -17,50 +18,59 @@
         <em class="italic text-[#c9a96e]">Sergio Hideki</em><br />
       </h1>
       <p
-        class="font-mono text-[11px] font-light text-[rgba(232,228,220,0.35)] tracking-[0.12em] mb-10"
+        class="font-mono text-[11px] md:text-sm font-light text-[rgba(232,228,220,0.35)] tracking-[0.12em] mb-10"
       >
         ANGULAR DEVELOPER · ADAMANTINA - SÃO PAULO, BR
       </p>
       <p
-        class="text-[14px] font-light text-[rgba(232,228,220,0.55)] leading-[1.75] max-w-[360px]"
+        class="text-[14px] text-justify font-light font-highlight leading-[1.75]"
+        i18n="@@profile.description"
       >
-        Especializado em arquitetura front-end escalável com Angular. Construo
-        aplicações de alta performance com foco em DX, acessibilidade e boas
-        práticas modernas.
+        Desenvolvedor Frontend especializado em Angular com experiência em
+        aplicações enterprise para clientes globais. Meu trabalho vai além do
+        código: me preocupo com performance, escalabilidade e a qualidade da
+        experiência que o sistema entrega. Já contribuí em projetos para o grupo
+        CNH Industrial, sistemas de gestão de clínicas, plataformas de fitness e
+        e-commerces.
       </p>
     </div>
   </div>
-  <div class="flex flex-col gap-4 p-8">
+  <div class="mt-5 md:mt-0 md:pl-8 grid gap-4">
     <div
       class="flex-1 border border-[rgba(232,228,220,0.08)] p-6 flex flex-col justify-end bg-[rgba(201,169,110,0.03)]"
     >
-      <div
-        class="font-serif text-[48px] font-normal text-[#c9a96e] leading-none"
-      >
-        +5
+      <div class="font-serif text-4xl text-[#c9a96e]">
+        +{{ yearsOfExperience }}
       </div>
       <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] tracking-[0.1em] mt-1.5"
+        class="font-mono text-[10px] md:text-base font-light font-highlight tracking-[0.1em] mt-1.5"
+        i18n="@@profile.years"
       >
         ANOS DE EXPERIÊNCIA EM ANGULAR
       </div>
     </div>
     <div class="grid grid-cols-2 gap-2">
       <div class="border border-[rgba(232,228,220,0.08)] p-4">
-        <div class="font-mono text-[22px] font-normal text-[#c9a96e]">18</div>
+        <div class="font-mono md:text-base font-normal text-[#c9a96e]">
+          +{{ projectDelivered }}
+        </div>
         <div
-          class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] tracking-[0.08em] mt-1"
+          class="font-mono text-[10px] md:text-base font-light font-highlight tracking-[0.08em] mt-1"
+          i18n="@@profile.projects"
         >
-          projetos entregues
+          PROJETOS ENTREGUES
         </div>
       </div>
 
       <div class="border border-[rgba(232,228,220,0.08)] p-4">
-        <div class="font-mono text-[22px] font-normal text-[#c9a96e]">v17</div>
+        <div class="font-mono md:text-base font-normal text-[#c9a96e]">
+          {{ version }}
+        </div>
         <div
-          class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.3)] tracking-[0.08em] mt-1"
+          class="font-mono text-[10px] md:text-base font-light font-highlight tracking-[0.08em] mt-1"
+          i18n="@@profile.version"
         >
-          versão dominada
+          VERSÃO DOMINADA
         </div>
       </div>
     </div>

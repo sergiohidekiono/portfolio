@@ -1,104 +1,34 @@
-<div>
-  <!-- Header -->
-  <app-section-title [sectionNumber]="'03'" [title]="'Trajetória'" />
-
-  <!-- Timeline -->
-  <div class="flex flex-col">
-    <!-- Row -->
+<app-section-title [sectionNumber]="section" [title]="title" />
+<div class="page-container">
+  @for (exp of experiences; track $index) {
     <div
       class="grid grid-cols-[120px_1px_1fr] gap-6 py-5 border-b border-[rgba(232,228,220,0.06)] items-start"
     >
-      <!-- Date -->
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.25)] leading-[1.6] pt-[2px]"
-      >
-        2022<br />— hoje
+      <div class="font-mono text-[10px] md:text-base font-light font-highlight">
+        {{ exp.duration }}
       </div>
-
-      <!-- Line + Dot -->
       <div class="relative bg-[rgba(201,169,110,0.2)]">
         <div
           class="absolute top-[4px] left-1/2 -translate-x-1/2 w-[5px] h-[5px] rounded-full bg-[#c9a96e]"
         ></div>
       </div>
-
-      <!-- Content -->
       <div>
-        <div class="text-[13px] font-medium text-[#e8e4dc] mb-[2px]">
-          Dev Front-end Sênior
-        </div>
-        <div class="font-mono text-[11px] font-light text-[#c9a96e] mb-1.5">
-          Empresa ABC
+        <div
+          class="text-[13px] md:text-base font-medium text-[#e8e4dc] mb-[2px]"
+        >
+          {{ exp.position }}
         </div>
         <div
-          class="text-[12px] font-light text-[rgba(232,228,220,0.4)] leading-[1.6]"
+          class="font-mono text-[11px] md:text-sm font-light text-[#c9a96e] mb-1.5"
         >
-          Liderança técnica, migração para Angular 17 com Signals e redução de
-          40% no bundle size.
+          {{ exp.enterprise }}
+        </div>
+        <div
+          class="text-[12px] md:text-base text-justify font-light font-highlight leading-[1.6]"
+        >
+          {{ exp.description }}
         </div>
       </div>
     </div>
-
-    <!-- Repete para os outros -->
-    <div
-      class="grid grid-cols-[120px_1px_1fr] gap-6 py-5 border-b border-[rgba(232,228,220,0.06)] items-start"
-    >
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.25)] leading-[1.6] pt-[2px]"
-      >
-        2020<br />— 2022
-      </div>
-
-      <div class="relative bg-[rgba(201,169,110,0.2)]">
-        <div
-          class="absolute top-[4px] left-1/2 -translate-x-1/2 w-[5px] h-[5px] rounded-full bg-[#c9a96e]"
-        ></div>
-      </div>
-
-      <div>
-        <div class="text-[13px] font-medium text-[#e8e4dc] mb-[2px]">
-          Dev Front-end Pleno
-        </div>
-        <div class="font-mono text-[11px] font-light text-[#c9a96e] mb-1.5">
-          Startup XYZ
-        </div>
-        <div
-          class="text-[12px] font-light text-[rgba(232,228,220,0.4)] leading-[1.6]"
-        >
-          Desenvolvimento de módulos críticos com Angular + NgRx para plataforma
-          SaaS B2B.
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="grid grid-cols-[120px_1px_1fr] gap-6 py-5 border-b border-[rgba(232,228,220,0.06)] items-start"
-    >
-      <div
-        class="font-mono text-[10px] font-light text-[rgba(232,228,220,0.25)] leading-[1.6] pt-[2px]"
-      >
-        2019<br />— 2020
-      </div>
-
-      <div class="relative bg-[rgba(201,169,110,0.2)]">
-        <div
-          class="absolute top-[4px] left-1/2 -translate-x-1/2 w-[5px] h-[5px] rounded-full bg-[#c9a96e]"
-        ></div>
-      </div>
-
-      <div>
-        <div class="text-[13px] font-medium text-[#e8e4dc] mb-[2px]">
-          Dev Júnior
-        </div>
-        <div class="font-mono text-[11px] font-light text-[#c9a96e] mb-1.5">
-          Agência Digital
-        </div>
-        <div
-          class="text-[12px] font-light text-[rgba(232,228,220,0.4)] leading-[1.6]"
-        >
-          SPAs em Angular e manutenção de sistemas legados AngularJS.
-        </div>
-      </div>
-    </div>
-  </div>
+  }
 </div>

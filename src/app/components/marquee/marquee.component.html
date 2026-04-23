@@ -1,34 +1,22 @@
 <div
-  class="border-t-1 border-tb-[rgba(232,228,220,0.06)] overflow-hidden bg-[rgba(201,169,110,0.04)]"
+  class="flex items-center border-t h-14 md:h-20 overflow-hidden bg-[rgba(201,169,110,0.04)] pause-on-hover"
 >
-  <div class="flex py-4 gap-0 w-max animate-[marquee_28s_linear_infinite] items-center">
-    <span class="marquee-item">Angular 19</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">TypeScript</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">RxJS</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">NgRx Signals</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">NestJs</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">Jest</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">Storybook</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">Node.js</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">CI/CD</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">Prisma</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">Figma</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">RxJS</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">API Rest</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">Git</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">Jira</span
-    ><span class="marquee-dot">·</span>
-    <span class="marquee-item">Scrum</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">Kanban</span
-    ><span class="marquee-dot">·</span> <span class="marquee-item">Azure DevOps</span
-    ><span class="marquee-dot">·</span>
+  <div class="flex w-max animate-marquee marquee pointer-events-none">
+    @for (tech of technologies; track tech.id) {
+      <span
+        class="font-mono font-light text-[#c9a96e] tracking-[0.12em] px-8 opacity-70 whitespace-nowrap text-xs md:text-base"
+      >
+        {{ tech.name }}
+      </span>
+      <span class="text-[rgb(255,255,255)]">·</span>
+    }
+    @for (tech of technologies; track tech.id) {
+      <span
+        class="font-mono font-light text-[#c9a96e] tracking-[0.12em] px-8 opacity-70 whitespace-nowrap text-xs md:text-base"
+      >
+        {{ tech.name }}
+      </span>
+      <span class="text-[rgb(255,255,255)]">·</span>
+    }
   </div>
 </div>

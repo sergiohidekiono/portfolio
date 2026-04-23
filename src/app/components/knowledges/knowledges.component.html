@@ -1,45 +1,16 @@
-<div class="">
-  <app-section-title
-    [sectionNumber]="'01'"
-    [title]="'Conhecimentos'"
-    i18n-title="@@section.knowledges.title"
-  />
-  <div class="grid grid-cols-2 gap-4">
+<app-section-title [sectionNumber]="section" [title]="title" />
+<div class="page-container grid grid-cols-2 gap-4">
+  @for (knowledge of knowledges; track knowledge.title) {
     <div class="border border-[rgba(232,228,220,0.08)] p-5">
-      <div class="text-[#c9a96e] text-lg mb-2">Δ</div>
-      <div class="text-[#e8e4dc] text-[14px] mb-1">Angular Core</div>
-      <div
-        class="font-mono text-[11px] font-light text-[rgba(232,228,220,0.35)]"
-      >
-        Components, modules, lazy loading, change detection OnPush
+      <div class="text-[#e8e4dc] text-[14px] md:text-lg mb-1 flex gap-4">
+        <span class="text-yellow-500 text-lg mb-2">
+          <i [class]="knowledge.icon"></i>
+        </span>
+        {{ knowledge.title }}
+      </div>
+      <div class="font-mono text-[11px] md:text-base font-light font-highlight">
+        {{ knowledge.content.join(", ") }}
       </div>
     </div>
-    <div class="border border-[rgba(232,228,220,0.08)] p-5">
-      <div class="text-[#c9a96e] text-lg mb-2">∿</div>
-      <div class="text-[#e8e4dc] text-[14px] mb-1">RxJS & Signals</div>
-      <div
-        class="font-mono text-[11px] font-light text-[rgba(232,228,220,0.35)]"
-      >
-        Reactive patterns, Signals API, NgRx state management
-      </div>
-    </div>
-    <div class="border border-[rgba(232,228,220,0.08)] p-5">
-      <div class="text-[#c9a96e] text-lg mb-2">⬡</div>
-      <div class="text-[#e8e4dc] text-[14px] mb-1">Arquitetura</div>
-      <div
-        class="font-mono text-[11px] font-light text-[rgba(232,228,220,0.35)]"
-      >
-        Monorepos NX, Design System, micro-frontends
-      </div>
-    </div>
-    <div class="border border-[rgba(232,228,220,0.08)] p-5">
-      <div class="text-[#c9a96e] text-lg mb-2">◈</div>
-      <div class="text-[#e8e4dc] text-[14px] mb-1" i18n="@@knowledge.quality">Qualidade</div>
-      <div
-        class="font-mono text-[11px] font-light text-[rgba(232,228,220,0.35)]"
-      i18n="@@knowledge.quality.description">
-        Jest, Cypress, Storybook, 80%+ cobertura de testes
-      </div>
-    </div>
-  </div>
+  }
 </div>

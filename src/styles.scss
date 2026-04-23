@@ -26,3 +26,13 @@ body {
 .mono {
   font-family: 'IBM Plex Mono', monospace
 }
+
+.font-highlight {
+  color: #e8e4dc8c;
+}
+
+@layer components {
+  .page-container {
+    @apply flex flex-col p-8;
+  }
+}
