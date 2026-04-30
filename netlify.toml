@@ -2,6 +2,10 @@
   command = "ng build --localize"
   publish = "dist/portfolio/browser"
 
+[build]
+  command = "ng build"
+  publish = "dist/portfolio/browser"
+  
 [[redirects]]
   from = "/*"
   to = "/index.html"
