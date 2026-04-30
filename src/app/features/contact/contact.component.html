@@ -2,12 +2,10 @@
   <div class="px-8 py-10 border-r border-[rgba(232,228,220,0.08)]">
     <div
       class="font-serif italic md:text-4xl text-[#e8e4dc] leading-[1.2] mb-6"
-      i18n="@@contact.title"
-    >
-      Vamos<br />trabalhar<br />juntos?
-    </div>
+      [innerHTML]="'contact.title' | translate"
+    ></div>
     <div class="flex flex-col gap-2">
-      @for(contact of contacts; track contact.id){
+      @for (contact of contacts; track contact.id) {
         <a
           href="{{ contact.url }}"
           target="_blank"
@@ -21,20 +19,16 @@
   </div>
   <div class="page-container py-10 justify-end">
     <p
-      class="font-mono text-[12px] md:text-lg font-light font-highlight text-[rgba(232,228,220,0.2)] leading-[1.7] tracking-[0.06em]"
-      i18n="@@contact.description"
-    >
-      Aberto a oportunidades remotas,<br />
-      híbridas e presenciais.<br />
-      Respondo em até 24h.
+      class="font-mono text-[12px] md:text-base font-light font-highlight text-[rgba(232,228,220,0.2)] leading-[1.7] tracking-[0.06em]"
+    [innerHTML]="'contact.description' | translate">
+
     </p>
     <button
       type="button"
       (click)="downloadCurriculum()"
       class="mt-4 w-full bg-[#c9a96e] text-[#0e0e0e] px-7 py-[14px] font-mono text-[12px] tracking-[0.08em] transition-opacity duration-200 rounded-md hover:opacity-85"
-      i18n="@@contact.downloadButton"
     >
-      BAIXAR CURRÍCULO PDF
+      {{ 'contact.download' | translate }}
     </button>
   </div>
 </div>

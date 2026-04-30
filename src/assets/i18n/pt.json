@@ -1,0 +1,184 @@
+{
+  "navbar": {
+    "knowledges": "Conhecimentos",
+    "trajectory": "Trajetória",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "marquee": {
+    "angular": "Angular",
+    "javascript": "JavaScript",
+    "angular_material": "Angular Material",
+    "primeng": "PrimeNG",
+    "typescript": "TypeScript",
+    "rxjs": "RxJS",
+    "ngrx_signals": "NgRx Signals",
+    "nestjs": "NestJS",
+    "jest": "Jest",
+    "storybook": "Storybook",
+    "node": "Node.js",
+    "ci_cd": "CI/CD",
+    "prisma": "Prisma",
+    "figma": "Figma",
+    "api_rest": "API REST",
+    "git": "Git",
+    "jira": "Jira",
+    "scrum": "Scrum",
+    "kanban": "Kanban",
+    "i18n": "i18n",
+    "azure_devops": "Azure DevOps"
+  },
+  "profile": {
+    "available_for_hire": "DISPONÍVEL PARA CONTRATAÇÃO",
+    "frontend_developer": "DESENVOLVEDOR FRONTEND · ADAMANTINA - SÃO PAULO, BR",
+    "description": "Desenvolvedor Frontend especializado em Angular com experiência em aplicações enterprise para clientes globais. Meu trabalho vai além do código: me preocupo com performance, escalabilidade e a qualidade da experiência que o sistema entrega. Já contribuí em projetos para o grupo Iveco, CNH Industrial (sistemas de módulos financeiros, impressão de etiquetas, sistemas de gestão de estoque, sistemas de acúmulos de pontuação que troca por prêmios, entre outros), sistemas de gestão de clínicas, plataformas de academias.",
+    "years_of_experience": "ANOS DE EXPERIÊNCIA EM ANGULAR",
+    "project_delivered": "PROJETO ENTREGUE",
+    "project_delivereds": "PROJETOS ENTREGUES",
+    "versions": "VERSÕES DOMINADAS"
+  },
+  "knowledges": {
+    "title": "CONHECIMENTOS",
+    "frontend_engineering": {
+      "title": "Engenheiro Frontend",
+      "icon": "pi pi-code",
+      "content": [
+        " Angular (Core, Signals, Standalone Components, Lazy Loading)",
+        " TypeScript",
+        " RxJS (gestão de estado assíncrono)",
+        " HTML5 e CSS3",
+        " Tailwind CSS"
+      ]
+    },
+    "architecture_performance": {
+      "title": "Arquitetura & Performance",
+      "icon": "pi pi-cog",
+      "content": [
+        " Componentização reutilizável",
+        " Arquitetura modular",
+        " Micro-frontends",
+        " Otimização para alto volume de dados",
+        " Código Limpo"
+      ]
+    },
+    "integrations_data": {
+      "title": "Integrações & Dados",
+      "icon": "pi pi-database",
+      "content": [
+        " Consumo de APIs REST",
+        " Firebase e Supabase",
+        " SQL (consultas e integrações)"
+      ]
+    },
+    "quality_practices": {
+      "title": "Qualidade & Boas Práticas",
+      "icon": "pi pi-check-circle",
+      "content": [
+        " Testes automatizados com Jest",
+        " Storybook para documentação de componentes e testando",
+        " Padronização de componentes e Design System"
+      ]
+    },
+    "tools_methodologies": {
+      "title": "Ferramentas & Metodologias",
+      "icon": "pi pi-briefcase",
+      "content": [
+        " Git e GitHub",
+        " Azure DevOps",
+        " Jira",
+        " Scrum e Kanban",
+        " Figma"
+      ]
+    }
+  },
+  "trajectory": {
+    "title": "TRAJETÓRIA",
+    "experience": {
+      "wba": {
+        "position": "Desenvolvedor Frontend Pleno",
+        "enterprise": "WBA Software",
+        "duration": "3 meses (SET 2022 – NOV 2023)",
+        "description": "Desenvolvimento e manutenção de interfaces web com Angular, implementação de componentes reutilizáveis, layout responsivo, system design para performance, integração com APIs REST e tratamento de estados assíncronos com RxJS.",
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "RxJS",
+          "HTML",
+          "CSS",
+          "REST APIs",
+          "Git"
+        ]
+      },
+      "tecnofit": {
+        "position": "Desenvolvedor Frontend Pleno",
+        "enterprise": "Tecnofit",
+        "duration": "1 ano (AGO 2022 – JUL 2023)",
+        "description": "Desenvolvimento de módulos de agenda e campanhas, criação de biblioteca de componentes reutilizáveis, otimização de performance em telas com grande volume de dados e integração com APIs REST usando RxJS.",
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "RxJS",
+          "REST APIs",
+          "PHP",
+          "SQL",
+          "Git",
+          "Figma"
+        ]
+      },
+      "avanade": {
+        "position": "Analista Frontend Developer",
+        "enterprise": "Avanade",
+        "duration": "1 ano e 1 mês (JUL 2021 – JUL 2022)",
+        "description": "Desenvolvimento de aplicações corporativas em Angular para clientes internacionais do grupo CNH Industrial. Módulos de gestão de produtos, estoque e processos financeiros. Componentes reutilizáveis, integração com APIs REST e trabalho em times multidisciplinares ágeis.",
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "RxJS",
+          "REST APIs",
+          "Git",
+          "Azure DevOps",
+          "Figma",
+          "SQL"
+        ]
+      },
+      "omsistemas": {
+        "position": "Programador Júnior II",
+        "enterprise": "OM Sistemas",
+        "duration": "2 anos e 11 meses (AGO 2018 – JUN 2021)",
+        "description": "Desenvolvimento de sistema web para gestão de clínicas e pacientes, funcionalidades de agendamento, cadastro e rotinas administrativas. Manutenção e evolução de sistema legado com melhorias contínuas.",
+        "technologies": [
+          "Angular",
+          "TypeScript",
+          "RxJS",
+          "REST APIs",
+          "Git",
+          "SQL",
+          "DevExtreme"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "PROJETOS",
+    "wktechnology": {
+      "number": "01",
+      "title": "WK Technology",
+      "description": "É um sistema web voltado para o gerenciamento e acompanhamento de entregas e transporte. Seu propósito principal é dar visibilidade operacional sobre o ciclo de vida dos pedidos, desde o momento em que são criados até a conclusão da entrega. O sistema permite que uma empresa de delivery ou transporte consiga monitorar em tempo real o que está acontecendo com cada pedido. Com ele, é possível saber quantas entregas estão pendentes, quais estão a caminho, quais já foram concluídas e quais foram canceladas — tudo em um único painel centralizado.",
+      "url": "https://wktechnology.netlify.app/"
+    },
+    "medalerta": {
+      "number": "02",
+      "title": "Med Alerta",
+      "description": "Med Alerta é um sistema web voltado para o gerenciamento de medicamentos e alertas de saúde. Ele permite que os usuários registrem seus medicamentos, horários de administração e recebam notificações de alerta.",
+      "url": "https://med-alerta.netlify.app/login"
+    }
+  },
+  "contact": {
+    "title": "Vamos<br />trabalhar<br />juntos?",
+    "description": "Aberto a oportunidades remotas,<br /> híbridas e presenciais.<br /> Respondo em até 24h.",
+    "download": "BAIXAR CURRÍCULO PDF"
+  },
+  "footer": {
+    "description": "Todos direitos reservados."
+  }
+}

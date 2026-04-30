@@ -5,12 +5,11 @@
     <div>
       <div
         class="inline-flex items-center gap-1.5 font-mono text-[10px] font-light text-[#c9a96e] tracking-[0.1em] border border-[rgba(201,169,110,0.3)] px-3 py-[5px] rounded-[2px] w-fit mb-10"
-        i18n="@@profile.tag"
       >
         <div
           class="w-[6px] h-[6px] rounded-full bg-[#4a7c59] animate-[pulse_2.5s_ease-in-out_infinite]"
         ></div>
-        DISPONÍVEL PARA CONTRATAÇÃO
+        {{'profile.available_for_hire' | translate}}
       </div>
       <h1
         class="font-serif text-[56px] font-normal leading-[1] tracking-[-0.02em] text-[#e8e4dc] mb-2"
@@ -20,18 +19,12 @@
       <p
         class="font-mono text-[11px] md:text-sm font-light text-[rgba(232,228,220,0.35)] tracking-[0.12em] mb-10"
       >
-        ANGULAR DEVELOPER · ADAMANTINA - SÃO PAULO, BR
+          {{'profile.frontend_developer' | translate}}
       </p>
       <p
         class="text-[14px] text-justify font-light font-highlight leading-[1.75]"
-        i18n="@@profile.description"
       >
-        Desenvolvedor Frontend especializado em Angular com experiência em
-        aplicações enterprise para clientes globais. Meu trabalho vai além do
-        código: me preocupo com performance, escalabilidade e a qualidade da
-        experiência que o sistema entrega. Já contribuí em projetos para o grupo
-        CNH Industrial, sistemas de gestão de clínicas, plataformas de fitness e
-        e-commerces.
+        {{'profile.description' | translate}}
       </p>
     </div>
   </div>
@@ -44,9 +37,8 @@
       </div>
       <div
         class="font-mono text-[10px] md:text-base font-light font-highlight tracking-[0.1em] mt-1.5"
-        i18n="@@profile.years"
       >
-        ANOS DE EXPERIÊNCIA EM ANGULAR
+        {{'profile.years_of_experience' | translate}}
       </div>
     </div>
     <div class="grid grid-cols-2 gap-2">
@@ -56,9 +48,8 @@
         </div>
         <div
           class="font-mono text-[10px] md:text-base font-light font-highlight tracking-[0.08em] mt-1"
-          i18n="@@profile.projects"
         >
-          PROJETOS ENTREGUES
+          {{ projectDelivered === 1 ? 'profile.project_delivered' : 'profile.project_delivereds' | translate }}
         </div>
       </div>
 
@@ -68,9 +59,8 @@
         </div>
         <div
           class="font-mono text-[10px] md:text-base font-light font-highlight tracking-[0.08em] mt-1"
-          i18n="@@profile.version"
         >
-          VERSÃO DOMINADA
+          {{ 'profile.versions' | translate }}
         </div>
       </div>
     </div>

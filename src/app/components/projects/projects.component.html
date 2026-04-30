@@ -1,5 +1,8 @@
 <div class="sec">
-  <app-section-title [sectionNumber]="section" [title]="title" />
+  <app-section-title
+    [sectionNumber]="section"
+    [title]="'projects.title' | translate"
+  />
   <div class="page-container">
     @for (project of projects; track project.title) {
       <div
@@ -8,14 +11,14 @@
         <div
           class="font-mono text-[10px] md:text-base font-light font-highlight"
         >
-          {{ project.number }}
+          {{ project.number | translate }}
         </div>
         <div>
           <div class="text-[14px] md:text-lg text-[#e8e4dc]">
-            {{ project.title }}
+            {{ project.title | translate }}
           </div>
           <div class="text-[11px] md:text-base font-light font-highlight">
-            {{ project.description }}
+            {{ project.description | translate }}
           </div>
         </div>
 
@@ -24,7 +27,7 @@
             <span
               class="font-mono text-[10px] md:text-xs px-2 py-[2px] border border-gray-500/30 rounded-sm"
             >
-              {{ tech }}
+              {{ tech | translate }}
             </span>
           }
         </div>

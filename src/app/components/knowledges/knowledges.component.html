@@ -1,15 +1,18 @@
-<app-section-title [sectionNumber]="section" [title]="title" />
+<app-section-title
+  [sectionNumber]="section"
+  [title]="'knowledges.title' | translate"
+/>
 <div class="page-container grid grid-cols-2 gap-4">
   @for (knowledge of knowledges; track knowledge.title) {
     <div class="border border-[rgba(232,228,220,0.08)] p-5">
       <div class="text-[#e8e4dc] text-[14px] md:text-lg mb-1 flex gap-4">
         <span class="text-yellow-500 text-lg mb-2">
-          <i [class]="knowledge.icon"></i>
+          <i [class]="knowledge.icon | translate"></i>
         </span>
-        {{ knowledge.title }}
+        {{ knowledge.title | translate }}
       </div>
       <div class="font-mono text-[11px] md:text-base font-light font-highlight">
-        {{ knowledge.content.join(", ") }}
+        {{ knowledge.content.join(", ") | translate }}
       </div>
     </div>
   }

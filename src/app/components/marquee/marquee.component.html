@@ -1,12 +1,14 @@
 <div
-  class="flex items-center border-t h-14 md:h-20 overflow-hidden bg-[rgba(201,169,110,0.04)] pause-on-hover"
+  class="flex items-center h-14 md:h-20 overflow-hidden bg-[rgba(201,169,110,0.04)] pause-on-hover"
 >
-  <div class="flex w-max animate-marquee marquee pointer-events-none">
+  <div
+    class="flex w-max items-center animate-marquee marquee pointer-events-none"
+  >
     @for (tech of technologies; track tech.id) {
       <span
         class="font-mono font-light text-[#c9a96e] tracking-[0.12em] px-8 opacity-70 whitespace-nowrap text-xs md:text-base"
       >
-        {{ tech.name }}
+        {{ "marquee." + tech.name | translate }}
       </span>
       <span class="text-[rgb(255,255,255)]">·</span>
     }
@@ -14,7 +16,7 @@
       <span
         class="font-mono font-light text-[#c9a96e] tracking-[0.12em] px-8 opacity-70 whitespace-nowrap text-xs md:text-base"
       >
-        {{ tech.name }}
+        {{ "marquee." + tech.name | translate }}
       </span>
       <span class="text-[rgb(255,255,255)]">·</span>
     }

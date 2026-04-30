@@ -4,12 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "portfolio": {
-      "i18n": {
-        "sourceLocale": "pt",
-        "locales": {
-          "en-US": "src/locale/messages.en.xlf"
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -30,6 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public",
@@ -76,7 +71,6 @@
             "production": {
               "buildTarget": "portfolio:build:production"
             },
-            "en-US": { "buildTarget": "portfolio:build:en-US" },
             "development": {
               "buildTarget": "portfolio:build:development"
             }

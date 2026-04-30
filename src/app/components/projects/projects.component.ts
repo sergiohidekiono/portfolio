@@ -4,18 +4,26 @@ import { CardModule } from 'primeng/card';
 import { SectionTitleComponent } from '../section-title/section-title.component';
 import { CommonModule } from '@angular/common';
 import { ProjectData } from '../../data';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule, ButtonModule, CardModule, SectionTitleComponent],
+  imports: [
+    CommonModule,
+    ButtonModule,
+    CardModule,
+    SectionTitleComponent,
+    TranslateModule,
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent implements OnInit {
   section: number = 3;
-  title = $localize`:@@projects.title:Projetos`;
 
   projects: any[] = [];
+
+  constructor() {}
 
   ngOnInit() {
     this.projects = ProjectData();

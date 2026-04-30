@@ -1,11 +1,14 @@
-<app-section-title [sectionNumber]="section" [title]="title" />
+<app-section-title
+  [sectionNumber]="section"
+  [title]="'trajectory.title' | translate"
+/>
 <div class="page-container">
   @for (exp of experiences; track $index) {
     <div
       class="grid grid-cols-[120px_1px_1fr] gap-6 py-5 border-b border-[rgba(232,228,220,0.06)] items-start"
     >
       <div class="font-mono text-[10px] md:text-base font-light font-highlight">
-        {{ exp.duration }}
+        {{ exp.duration | translate }}
       </div>
       <div class="relative bg-[rgba(201,169,110,0.2)]">
         <div
@@ -16,17 +19,17 @@
         <div
           class="text-[13px] md:text-base font-medium text-[#e8e4dc] mb-[2px]"
         >
-          {{ exp.position }}
+          {{ exp.position | translate }}
         </div>
         <div
           class="font-mono text-[11px] md:text-sm font-light text-[#c9a96e] mb-1.5"
         >
-          {{ exp.enterprise }}
+          {{ exp.enterprise | translate }}
         </div>
         <div
           class="text-[12px] md:text-base text-justify font-light font-highlight leading-[1.6]"
         >
-          {{ exp.description }}
+          {{ exp.description | translate }}
         </div>
       </div>
     </div>

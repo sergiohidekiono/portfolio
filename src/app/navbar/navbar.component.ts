@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Navbar } from '../data';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { MenuItem, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslateModule, SpeedDialModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
+  providers: [MessageService],
 })
 export class NavbarComponent {
   text = 'sergio.hideki()';
@@ -15,8 +20,40 @@ export class NavbarComponent {
   private isDeleting = false;
   private timeoutId: any;
 
+  items = Navbar();
+  flags: MenuItem[] | undefined;
+
+  constructor(
+    private translate: TranslateService,
+    private messageService: MessageService,
+  ) {
+    this.translate.use('pt');
+  }
+
   ngOnInit() {
     this.typeEffect();
+    this.flags = [
+      {
+        icon: 'pi pi-pencil',
+        command: () => {
+          this.messageService.add({
+            severity: 'info',
+            summary: 'Add',
+            detail: 'Data Added',
+          });
+        },
+      },
+      {
+        icon: 'pi pi-refresh',
+        command: () => {
+          this.messageService.add({
+            severity: 'success',
+            summary: 'Update',
+            detail: 'Data Updated',
+          });
+        },
+      },
+    ];
   }
 
   ngOnDestroy() {
@@ -45,7 +82,6 @@ export class NavbarComponent {
   }
 
   changeLang(lang: string) {
-    localStorage.setItem('lang', lang);
-    window.location.href = `/${lang}`;
+    this.translate.use(lang);
   }
 }
