@@ -38,9 +38,6 @@
             "scripts": []
           },
           "configurations": {
-            "en-US": {
-              "localize": ["en-US"]
-            },
             "production": {
               "budgets": [
                 {
