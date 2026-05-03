@@ -2,7 +2,7 @@
   [sectionNumber]="section"
   [title]="'knowledges.title' | translate"
 />
-<div class="page-container grid grid-cols-2 gap-4">
+<div class="page-container grid  md:grid-cols-2 gap-4">
   @for (knowledge of knowledges; track knowledge.title) {
     <div class="border border-[rgba(232,228,220,0.08)] p-5">
       <div class="text-[#e8e4dc] text-[14px] md:text-lg mb-1 flex gap-4">

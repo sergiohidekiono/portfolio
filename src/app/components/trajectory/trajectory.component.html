@@ -3,35 +3,41 @@
   [title]="'trajectory.title' | translate"
 />
 <div class="page-container">
-  @for (exp of experiences; track $index) {
-    <div
-      class="grid grid-cols-[120px_1px_1fr] gap-6 py-5 border-b border-[rgba(232,228,220,0.06)] items-start"
-    >
-      <div class="font-mono text-[10px] md:text-base font-light font-highlight">
-        {{ exp.duration | translate }}
-      </div>
-      <div class="relative bg-[rgba(201,169,110,0.2)]">
+  <div
+    class="max-h-[22rem] overflow-y-scroll [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-500/50 [&::-webkit-scrollbar-thumb]:rounded-full"
+  >
+    @for (exp of experiences; track $index) {
+      <div
+        class="grid md:grid-cols-[120px_1px_1fr] md:gap-6 p-5 border-b border-[rgba(232,228,220,0.06)] items-start bg-slate-500/10 rounded-lg"
+      >
         <div
-          class="absolute top-[4px] left-1/2 -translate-x-1/2 w-[5px] h-[5px] rounded-full bg-[#c9a96e]"
-        ></div>
-      </div>
-      <div>
-        <div
-          class="text-[13px] md:text-base font-medium text-[#e8e4dc] mb-[2px]"
+          class="font-mono text-[10px] md:text-base font-light font-highlight"
         >
-          {{ exp.position | translate }}
+          {{ exp.duration | translate }}
         </div>
-        <div
-          class="font-mono text-[11px] md:text-sm font-light text-[#c9a96e] mb-1.5"
-        >
-          {{ exp.enterprise | translate }}
+        <div class="relative bg-[rgba(201,169,110,0.2)]">
+          <div
+            class="hidden md:absolute top-[4px] left-1/2 -translate-x-1/2 w-[5px] h-[5px] rounded-full bg-[#c9a96e]"
+          ></div>
         </div>
-        <div
-          class="text-[12px] md:text-base text-justify font-light font-highlight leading-[1.6]"
-        >
-          {{ exp.description | translate }}
+        <div>
+          <div
+            class="text-[13px] md:text-base font-medium text-[#e8e4dc] mb-[2px]"
+          >
+            {{ exp.position | translate }}
+          </div>
+          <div
+            class="font-mono text-[11px] md:text-sm font-light text-[#c9a96e] mb-1.5"
+          >
+            {{ exp.enterprise | translate }}
+          </div>
+          <div
+            class="text-[12px] md:text-base text-justify font-light font-highlight leading-[1.6]"
+          >
+            {{ exp.description | translate }}
+          </div>
         </div>
       </div>
-    </div>
-  }
+    }
+  </div>
 </div>

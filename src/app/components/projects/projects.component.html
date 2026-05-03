@@ -3,40 +3,41 @@
     [sectionNumber]="section"
     [title]="'projects.title' | translate"
   />
-  <div class="page-container">
-    @for (project of projects; track project.title) {
-      <div
-        class="grid grid-cols-[2rem_1fr_120px_80px] items-center gap-4 py-4 border-b border-[rgba(232,228,220,0.06)] cursor-pointer transition hover:bg-[rgba(201,169,110,0.03)] group"
-      >
-        <div
-          class="font-mono text-[10px] md:text-base font-light font-highlight"
-        >
-          {{ project.number | translate }}
+  <div class="page-container px-0">
+    <p-carousel
+      [value]="projects"
+      [numVisible]="3"
+      [numScroll]="3"
+      [circular]="false"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-project #item>
+        <div class="m-4">
+          <p-card>
+            <ng-template #header>
+              <img alt="Card" class="rounded-t-lg" src="{{ project.image }}" />
+            </ng-template>
+            <ng-template #title>
+              <p class="font-bold">{{ project.title | translate }}</p>
+            </ng-template>
+            <hr />
+            <p class="pt-4 max-h-[6rem] overflow-y-auto">
+              {{ project.description | translate }}
+            </p>
+            <ng-template #footer>
+              <div class="flex mt-1">
+                <a
+                  href="{{ project.url | translate }}"
+                  target="_blank"
+                  class="w-full text-center p-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300"
+                >
+                  {{ "projects.visit" | translate }}
+                </a>
+              </div>
+            </ng-template>
+          </p-card>
         </div>
-        <div>
-          <div class="text-[14px] md:text-lg text-[#e8e4dc]">
-            {{ project.title | translate }}
-          </div>
-          <div class="text-[11px] md:text-base font-light font-highlight">
-            {{ project.description | translate }}
-          </div>
-        </div>
-
-        <div class="flex flex-wrap justify-end gap-1">
-          @for (tech of project.technologies; track tech) {
-            <span
-              class="font-mono text-[10px] md:text-xs px-2 py-[2px] border border-gray-500/30 rounded-sm"
-            >
-              {{ tech | translate }}
-            </span>
-          }
-        </div>
-        <div
-          class="text-[14px] font-highlight text-right transition group-hover:text-[#c9a96e]"
-        >
-          ↗
-        </div>
-      </div>
-    }
+      </ng-template>
+    </p-carousel>
   </div>
 </div>

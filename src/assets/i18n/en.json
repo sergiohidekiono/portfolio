@@ -160,18 +160,20 @@
   },
   "projects": {
     "title": "PROJECTS",
+    "visit": "Visit project ↗",
     "wktechnology": {
-      "number": "01",
       "title": "WK Technology",
-      "description": "It's a web-based system designed for managing and tracking deliveries and transportation. Its main purpose is to provide operational visibility into the order lifecycle, from the moment they are created until delivery is completed. The system allows a delivery or transportation company to monitor in real time what is happening with each order. With it, it's possible to know how many deliveries are pending, which ones are on their way, which ones have already been completed, and which ones have been canceled all in a single centralized dashboard.",
-      "url": "https://wktechnology.netlify.app/"
+      "description": "It's a web-based system designed for managing and tracking deliveries and transportation. Its main purpose is to provide operational visibility into the order lifecycle, from the moment they are created until delivery is completed. The system allows a delivery or transportation company to monitor in real time what is happening with each order. With it, it's possible to know how many deliveries are pending, which ones are on their way, which ones have already been completed, and which ones have been canceled all in a single centralized dashboard."
     },
     "medalerta": {
-      "number": "02",
       "title": "Med Alerta",
-      "description": "Med Alerta is a web-based system for managing medications and health alerts. It allows users to register their medications, administration times, and receive alert notifications.",
-      "technologies": ["Angular", "Firebase", "PrimeNG", "RxJS"],
-      "url": "https://med-alerta.netlify.app/login"
+      "description": "It's a web-based system for managing medications and health alerts. It allows users to register their medications, administration times, and receive alert notifications.",
+      "technologies": ["Angular", "Firebase", "PrimeNG", "RxJS"]
+    },
+    "yetianimation": {
+      "title": "Yeti Animation",
+      "description": "It's a web-based system for creating and managing animations using Rive. The animation is responded directly with the user's input.",
+      "technologies": ["Angular", "Rive", "PrimeNG"]
     }
   },
   "contact": {

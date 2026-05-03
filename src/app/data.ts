@@ -100,18 +100,25 @@ export function ExperiencesData() {
 export function ProjectData() {
   return [
     {
-      number: 'projects.wktechnology.number',
       title: 'projects.wktechnology.title',
       description: 'projects.wktechnology.description',
       technologies: ['Angular', 'Chart.js', 'REST', 'Supabase', 'RxJS'],
-      url: 'projects.wktechnology.url',
+      image: 'https://ik.imagekit.io/e0cpksvj4l/portfolio/wktechnology.png?updatedAt=1777781447995',
+      url: 'https://wktechnology.netlify.app/',
     },
     {
-      number: 'projects.medalerta.number',
       title: 'projects.medalerta.title',
       description: 'projects.medalerta.description',
       technologies: ['Angular', 'Firebase', 'PrimeNG', 'RxJS'],
-      url: 'projects.medalerta.url',
+      image: 'https://ik.imagekit.io/e0cpksvj4l/portfolio/med%20alerta.png?updatedAt=1777781448487',
+      url: 'https://med-alerta.netlify.app/login',
+    },
+    {
+      title: 'projects.yetianimation.title',
+      description: 'projects.yetianimation.description',
+      technologies: ['Angular', 'Rive', 'PrimeNG'],
+      image: 'https://ik.imagekit.io/e0cpksvj4l/portfolio/yeti%20animation.png?updatedAt=1777781448476',
+      url: 'https://yeti-animation.netlify.app/',
     },
   ];
 }

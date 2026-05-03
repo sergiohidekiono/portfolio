@@ -1,16 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { MenuItem } from 'primeng/api';
+
 import { Navbar } from '../data';
-import { SpeedDialModule } from 'primeng/speeddial';
-import { MenuItem, MessageService } from 'primeng/api';
+import { LanguageComponent } from '../components/language/language.component';
+import { DrawerModule } from 'primeng/drawer';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink, TranslateModule, SpeedDialModule],
+  imports: [
+    RouterLink,
+    TranslateModule,
+    ScrollTopModule,
+    LanguageComponent,
+    DrawerModule,
+    ButtonModule,
+  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
-  providers: [MessageService],
 })
 export class NavbarComponent {
   text = 'sergio.hideki()';
@@ -20,40 +30,15 @@ export class NavbarComponent {
   private isDeleting = false;
   private timeoutId: any;
 
-  items = Navbar();
-  flags: MenuItem[] | undefined;
+  isDrawerVisible: boolean = false;
 
-  constructor(
-    private translate: TranslateService,
-    private messageService: MessageService,
-  ) {
-    this.translate.use('pt');
-  }
+  items = Navbar();
+  flags: MenuItem[] | null = null;
+
+  constructor() {}
 
   ngOnInit() {
     this.typeEffect();
-    this.flags = [
-      {
-        icon: 'pi pi-pencil',
-        command: () => {
-          this.messageService.add({
-            severity: 'info',
-            summary: 'Add',
-            detail: 'Data Added',
-          });
-        },
-      },
-      {
-        icon: 'pi pi-refresh',
-        command: () => {
-          this.messageService.add({
-            severity: 'success',
-            summary: 'Update',
-            detail: 'Data Updated',
-          });
-        },
-      },
-    ];
   }
 
   ngOnDestroy() {
@@ -79,9 +64,5 @@ export class NavbarComponent {
       () => this.typeEffect(),
       this.isDeleting ? 50 : 100,
     );
-  }
-
-  changeLang(lang: string) {
-    this.translate.use(lang);
   }
 }
