@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SectionTitleComponent } from '../section-title/section-title.component';
+import { SectionTitleComponent } from '../../components/section-title/section-title.component';
 import { Experience } from './experience';
 import { TranslateModule } from '@ngx-translate/core';
 import { ExperiencesData } from '../../data';

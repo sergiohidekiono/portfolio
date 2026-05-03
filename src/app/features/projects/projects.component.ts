@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { SectionTitleComponent } from '../section-title/section-title.component';
+import { SectionTitleComponent } from '../../components/section-title/section-title.component';
 import { CommonModule } from '@angular/common';
 import { ProjectData } from '../../data';
 import { TranslateModule } from '@ngx-translate/core';

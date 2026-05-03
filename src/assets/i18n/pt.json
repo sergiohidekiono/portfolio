@@ -171,7 +171,7 @@
     },
     "yetianimation": {
       "title": "Yeti Animation",
-      "description": "É um sistema baseado na web para criar e gerenciar animações usando o Rive. Ele a animação é reagida diretamente com o input do usuário.",
+      "description": "É um sistema baseado na web para criar e gerenciar animações usando o Rive. A animação é reagida diretamente com o input do usuário.",
       "technologies": ["Angular", "Rive", "PrimeNG"]
     }
   },

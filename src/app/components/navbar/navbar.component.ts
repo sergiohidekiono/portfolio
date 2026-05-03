@@ -4,8 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { MenuItem } from 'primeng/api';
 
-import { Navbar } from '../data';
-import { LanguageComponent } from '../components/language/language.component';
+import { Navbar } from '../../data';
+import { LanguageComponent } from '../language/language.component';
 import { DrawerModule } from 'primeng/drawer';
 import { ButtonModule } from 'primeng/button';
 
