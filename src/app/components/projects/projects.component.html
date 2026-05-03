@@ -21,9 +21,9 @@
               <p class="font-bold">{{ project.title | translate }}</p>
             </ng-template>
             <hr />
-            <p class="pt-4 max-h-[6rem] overflow-y-auto">
-              {{ project.description | translate }}
-            </p>
+            <div class="h-[8rem] overflow-y-auto">
+              <p class="pt-4">{{ project.description | translate }}</p>
+            </div>
             <ng-template #footer>
               <div class="flex mt-1">
                 <a
