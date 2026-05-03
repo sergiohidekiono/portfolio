@@ -21,7 +21,9 @@
               <p class="font-bold">{{ project.title | translate }}</p>
             </ng-template>
             <hr />
-            <div class="h-[8rem] overflow-y-auto touch-pan-y">
+            <div
+              class="h-32 overflow-y-scroll [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-neutral-500/50 [&::-webkit-scrollbar-thumb]:rounded-full"
+            >
               <p class="pt-4">{{ project.description | translate }}</p>
             </div>
             <ng-template #footer>
