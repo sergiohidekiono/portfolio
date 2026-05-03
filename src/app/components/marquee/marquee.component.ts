@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
 import { MarqueeData } from '../../data';
 
 @Component({
   selector: 'app-marquee',
-  imports: [TranslateModule],
+  imports: [],
   templateUrl: './marquee.component.html',
   styleUrl: './marquee.component.scss',
 })
