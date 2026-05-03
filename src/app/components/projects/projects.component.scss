@@ -1,7 +1,23 @@
-:host ::ng-deep .p-carousel-content {
-  touch-action: pan-y !important;
+:host ::ng-deep .p-carousel-indicator-button {
+  position: relative;
+  overflow: hidden;
+  background: #727272 !important;
 }
 
-:host ::ng-deep .p-carousel-container {
-  touch-action: pan-y !important;
+:host ::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff !important;
+  animation: carouselProgress 3s linear forwards;
+}
+
+@keyframes carouselProgress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
