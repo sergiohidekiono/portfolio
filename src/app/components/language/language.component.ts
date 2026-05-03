@@ -32,38 +32,25 @@ import { ToggleSwitchModule } from 'primeng/toggleswitch';
   styles: [
     `
       :host ::ng-deep .p-toggleswitch .p-toggleswitch-slider {
-        background: linear-gradient(
-          90deg,
-          rgba(255, 82, 82, 1) -60%,
-          rgba(255, 255, 255, 1) 200%
-        );
+        background: rgba(255, 255, 255, 1);
       }
       :host
         ::ng-deep
         .p-toggleswitch.p-toggleswitch-checked
         .p-toggleswitch-slider {
-        background: linear-gradient(
-          90deg,
-          rgba(255, 241, 112, 1) 0%,
-          rgba(0, 189, 79, 1) 300%
-        );
+        background: rgba(99, 253, 163, 1);
       }
       :host
         ::ng-deep
         .p-toggleswitch:not(.p-toggleswitch-checked):hover
         .p-toggleswitch-slider {
-        background: linear-gradient(
-          90deg,
-          rgb(220, 60, 60) -60%,
-          rgb(220, 220, 220) 200%
-        ) !important;
+        background: rgb(221, 221, 221);
       }
-      :host ::ng-deep .p-toggleswitch:hover .p-toggleswitch-slider {
-        background: linear-gradient(
-          90deg,
-          rgb(214, 203, 88) 0%,
-          rgb(0, 150, 63) 300%
-        ) !important;
+      :host
+        ::ng-deep
+        .p-toggleswitch.p-toggleswitch-checked:hover
+        .p-toggleswitch-slider {
+        background: rgba(78, 209, 132, 1) !important;
       }
     `,
   ],
