@@ -44,11 +44,6 @@ export function KnowledgesData() {
       content: ['knowledges.frontend_engineering.content'],
     },
     {
-      title: 'knowledges.architecture_performance.title',
-      icon: 'knowledges.architecture_performance.icon',
-      content: ['knowledges.architecture_performance.content'],
-    },
-    {
       title: 'knowledges.integrations_data.title',
       icon: 'knowledges.integrations_data.icon',
       content: ['knowledges.integrations_data.content'],

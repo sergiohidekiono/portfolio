@@ -27,17 +27,6 @@
         " Tailwind CSS"
       ]
     },
-    "architecture_performance": {
-      "title": "Architecture & Performance",
-      "icon": "pi pi-cog",
-      "content": [
-        " Reusable components",
-        " Modular architecture",
-        " Micro-frontends",
-        " Optimization for high data volume",
-        " Clean Code"
-      ]
-    },
     "integrations_data": {
       "title": "Integrations & Data",
       "icon": "pi pi-database",
